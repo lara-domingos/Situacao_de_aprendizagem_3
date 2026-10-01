@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.topo {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+.titulo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+
+#clima-menu {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#icone-clima {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+#temperatura {
+    font-weight: bold;
+}
+
+#atualizar-clima {
+    margin-top: 4px;
+    padding: 3px 8px;
+    border: 1px solid #d2f5fe;
+    border-radius: 40px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#atualizar-clima:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.news-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.news-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.news-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.news-card p {
+    font-size: 0.95rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.news-card ul {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.news-card li {
+    margin-bottom: 5px;
+}
+
+.clima-pagina {
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.clima-pagina h2 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.clima-detalhes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.clima-detalhes div {
+    min-width: 180px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.clima-detalhes span,
+.clima-detalhes strong {
+    display: block;
+}
+
+.clima-detalhes strong {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+.mensagem-clima {
+    border-radius: 80px;
+    font-size: 40px;
+    color: #555;
+}
+
+.rodape {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    width: 100%;
+}
+
+#hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .topo {
+        padding: 20px;
+        min-height: 105px;
+        text-align: right;
+    }
+
+    .titulo {
+        top: 15px;
+        left: 20px;
+        font-size: 1.8rem;
+    }
+
+    #hamburguer {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 75px;
+        width: 100%;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    #clima-menu {
+        top: 8px;
+        right: 80px;
+        line-height: 1.2;
+    }
+
+    #icone-clima {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .topo {
+        padding: 15px;
+        min-height: 105px;
+    }
+
+    .titulo {
+        top: 15px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    #hamburguer {
+        top: 12px;
+        right: 15px;
+        font-size: 26px;
+    }
+
+    #clima-menu {
+        top: 55px;
+        right: 15px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #clima-menu p {
+        margin: 0;
+    }
+
+    .menu {
+        margin-top: 85px;
+        gap: 8px;
+    }
+
+    .menu a {
+        white-space: nowrap;
+    }
+
+    .clima-pagina {
+        padding: 20px 15px;
+    }
+
+    .clima-detalhes div {
+        width: 100%;
+    }
+}

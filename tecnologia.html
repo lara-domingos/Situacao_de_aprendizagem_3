@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tecnologia - NewsToday</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1 class="titulo">NewsToday</h1>
+        <button aria-expanded="false" aria-label="Abrir menu" id="hamburguer" type="button">☰</button>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="golfinho.html">Natureza</a>
+            <a href="clima.html">Clima</a>
+            <a href="brasil.html">Brasil</a>
+            <a href="saude.html">Saúde</a>
+            <a href="tecnologia.html">Tecnologia</a>
+        </nav>
+        <div aria-live="polite" id="clima-menu">
+            <p class="local">Mococa</p>
+            <p aria-label="Condição do tempo" id="icone-clima"></p>
+            <p id="temperatura">--°C</p>
+            <button id="atualizar-clima" type="button">Atualizar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="news-section">
+            <article class="news-card">
+                <img alt="Inteligência Artificial"
+                    src="https://assets.dio.me/d8xIaOB8tIRombKkzSc6INH4_zdylnUCU8RZQ8MNo6Y/f:webp/q:80/L2FydGljbGVzL2NvdmVyLzVmY2NmMWRlLWVhZTQtNGNjYS05MDdjLTA4NWI1YmUxOWExNC5qcGc" />
+                <h2>Inteligência Artificial</h2>
+                <p>O jogo mudou. Novas IAs não apenas sugerem código, mas debugam arquiteturas complexas sozinhas,
+                    forçando os programadores a focarem em engenharia de software de alto nível em vez de caçar erro de
+                    sintaxe.</p>
+            </article>
+            <article class="news-card">
+                <img alt="Desenvolvimento de Jogos"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrOo1d0Q00By_J345lMZZwTyKEAev549MtjyfRmhTfj4Z_XIajQcL6mUq_FlntXuQxlBujvsj-BDI-gcYVm1KyQYPpmkLigj3oPD604ocyZiR7Jiv5ASU9jJlTJvqvByoO0Si1qmpho4910TncFEfLp4JaGoIRmm8S1xRMUMSc8QWXqSclOulXuQ1aC9bm/s1494/capa.jpg" />
+                <h2>Desenvolvimento de Jogos</h2>
+                <p>A Unity soltou um update pesado focado em desenvolvedores indies. As novas ferramentas de otimização
+                    em C# tiram o peso da renderização, facilitando a criação de jogos de plataforma 2D que rodam
+                    fluidos em qualquer máquina.</p>
+            </article>
+            <article class="news-card">
+                <img alt="Cibersegurança"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwKKyu7E_I18PccZi7nf1qzwJ1jWCTuruPg&amp;s" />
+                <h2>Cibersegurança</h2>
+                <p>Um servidor mal configurado na nuvem expôs milhões de dados de brasileiros na deep web. Bancos e
+                    grandes empresas foram forçados a resetar credenciais em massa para evitar fraudes financeiras.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>NewsToday © 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

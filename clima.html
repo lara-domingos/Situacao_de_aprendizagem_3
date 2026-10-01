@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima - NewsToday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo">
+        <h1 class="titulo">NewsToday</h1>
+
+        <button id="hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="golfinho.html">Natureza</a>
+            <a href="clima.html">Clima</a>
+            <a href="brasil.html">Brasil</a>
+            <a href="saude.html">Saúde</a>
+            <a href="tecnologia.html">Tecnologia</a>
+        </nav>
+
+        <div id="clima-menu" aria-live="polite">
+            <p class="local">Mococa</p>
+            <p id="icone-clima" aria-label="Condição do tempo"></p>
+            <p id="temperatura">--°C</p>
+            <button id="atualizar-clima" type="button">Atualizar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="clima-pagina">
+            <h2>Clima em Mococa</h2>
+
+            <div class="clima-detalhes">
+                <div>
+                    <span>Temperatura</span>
+                    <strong id="temperatura-pagina">--°C</strong>
+                </div>
+                <div>
+                    <span>Umidade</span>
+                    <strong id="umidade">--%</strong>
+                </div>
+                <div>
+                    <span>Vento</span>
+                    <strong id="vento">-- km/h</strong>
+                </div>
+            </div>
+
+            <p id="mensagem-clima" class="mensagem-clima" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>NewsToday &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

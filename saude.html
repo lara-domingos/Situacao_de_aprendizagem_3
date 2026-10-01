@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Saúde - NewsToday</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1 class="titulo">NewsToday</h1>
+        <button aria-expanded="false" aria-label="Abrir menu" id="hamburguer" type="button">☰</button>
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="golfinho.html">Natureza</a>
+            <a href="clima.html">Clima</a>
+            <a href="brasil.html">Brasil</a>
+            <a href="saude.html">Saúde</a>
+            <a href="tecnologia.html">Tecnologia</a>
+        </nav>
+        <div aria-live="polite" id="clima-menu">
+            <p class="local">Mococa</p>
+            <p aria-label="Condição do tempo" id="icone-clima"></p>
+            <p id="temperatura">--°C</p>
+            <button id="atualizar-clima" type="button">Atualizar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="news-section">
+            <article class="news-card">
+                <img alt="Avanço no SUS"
+                    src="https://saude.abril.com.br/wp-content/uploads/2023/02/488_medicina_vacina-dengue-dado.png?crop=1&amp;resize=1212,909" />
+                <h2>Avanço no SUS</h2>
+                <p>A Anvisa liberou uma nova vacina contra a dengue que exige apenas uma aplicação. O lote inicial foca
+                    nas áreas de alto risco, prometendo desafogar as emergências dos hospitais nos meses de chuva.</p>
+            </article>
+            <article class="news-card">
+                <img alt="Tecnologia Médica"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSjKJgomR6M25b2emDQJGEuQp9b8meaSR7Q&amp;s" />
+                <h2>Tecnologia Médica</h2>
+                <p>Hospitais universitários triplicaram as cirurgias robóticas pelo SUS. A tecnologia garante cortes
+                    menores, menos sangramento e uma alta muito mais rápida para os pacientes operados.</p>
+            </article>
+            <article class="news-card">
+                <img alt="Saúde Mental"
+                    src="https://c.files.bbci.co.uk/A51E/production/_126407224_1alunochorando.jpg" />
+                <h2>Saúde Mental</h2>
+                <p>O governo levou psicólogos para dentro do ensino médio. O programa foca em combater a epidemia de
+                    ansiedade e depressão entre os adolescentes de forma direta e gratuita.</p>
+            </article>
+        </section>
+        <section class="news-section">
+            <article class="news-card">
+                <img alt="Ciência Nacional"
+                    src="https://s2-oglobo.glbimg.com/83Ra_ULiaUgFgbgH6jSm9Idi_c4=/0x0:1800x1204/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/c/6/GAXuvnQ3KsDxRCCx6jfQ/mosquito-anopheles.jpg" />
+                <h2>Ciência Nacional</h2>
+                <p>A Fiocruz chegou à reta final da vacina brasileira contra a malária. Se os testes em humanos
+                    confirmarem a eficácia, a distribuição em massa na região Norte começa no ano que vem.</p>
+            </article>
+            <article class="news-card">
+                <img alt="Regulação"
+                    src="https://s2-g1.glbimg.com/c3PKo2WuVsgs-wQmhEYft8T5AoU=/0x0:5000x3335/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/G/8/CdaJNASvKNZgKpITsGnQ/2023-05-02t065233z-1838448016-rc24q0a1yoiz-rtrmadp-3-australia-vaping-ban.jpg" />
+                <h2>Regulação</h2>
+                <p>A Anvisa parou de dar avisos e começou a multar plataformas digitais em milhões por permitirem o
+                    comércio ilegal de cigarros eletrônicos (vapes), secando a oferta online.</p>
+            </article>
+            <article class="news-card">
+                <img alt="Prevenção"
+                    src="https://www.gov.br/saude/pt-br/campanhas-da-saude/2024/poliomielite/imagens/ze-gotinha/ze-gotinha-completo-positivo.png" />
+                <h2>Prevenção</h2>
+                <p>O plano de antecipar a vacina da gripe funcionou. Vacinando a população antes do pico do frio, os
+                    hospitais no Sul e Sudeste não entraram em colapso com surtos de virose respiratória.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>NewsToday © 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
